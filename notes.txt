@@ -1,0 +1,6 @@
+So if the len of the labels or rows is 1
+  print a single table (no characters for the inbetween columns)
+  
+ Otherwise
+  print this full table of additional rows
+  
