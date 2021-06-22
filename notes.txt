@@ -1,6 +1,26 @@
 So if the len of the labels or rows is 1
   print a single table (no characters for the inbetween columns)
+  CREATE HEADER WITH CORNER ON END
+  #head
+  print left corner + top line + right corner
+  
+  #body
+  iterate through items, 
+    print left + item + right
+    
+  #footer
+  print corner + len(longest_entry) + corner
+
+  
   
  Otherwise
   print this full table of additional rows
+  CREATE HEADER WITH JOINER ON END
+  FINAL ENTRY ADD CORNER
   
+  #head
+  print left corner + top line + right corner
+  
+  #body
+  iterate through items, 
+    print left 
