@@ -1,3 +1,10 @@
+def print_row(row):
+    return ' ' + '=== '*len(row) + ' \n' + '|' + '|'.join(f' {x} ' for x in row) + '|'
+
+def print_board(arr):
+    return '\n'.join(print_row(row) for row in arr) + '\n ' + '=== '*len(arr[-1])
+
+
 So if the len of the labels or rows is 1
   print a single table (no characters for the inbetween columns)
   CREATE HEADER WITH CORNER ON END
